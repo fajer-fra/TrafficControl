@@ -1,15 +1,9 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package cs2.project;
-
 /**
- *
- * @author ranee
+ * Common parent for devices attached to a road.
+ * A device's immutable ID determines equality, even across subclasses.
  */
 public class TrafficDevice {
-     private final String deviceId;
+    private final String deviceId;
     private final String roadName;
 
     public TrafficDevice(String id, String road) {
@@ -58,4 +52,3 @@ public class TrafficDevice {
         return deviceId.hashCode();
     }
 }
-
